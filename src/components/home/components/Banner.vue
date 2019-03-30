@@ -31,12 +31,12 @@ export default {
         autoplay: {
           delay: 3000, // 自动切换的时间间隔，单位ms
           disableOnInteraction: true, // 用户操作swiper之后，是否禁止autoplay
-          waitForTransition: true, // 等待过渡完毕。自动切换会在slide过渡完毕后才开始计时
+          waitForTransition: true // 等待过渡完毕。自动切换会在slide过渡完毕后才开始计时
         },
         navigation: {
           nextEl: '.swiper-button-next', // 前进按钮的css选择器或HTML元素。
           prevEl: '.swiper-button-prev', // 后退按钮的css选择器或HTML元素。
-          hideOnClick: true, // 点击slide时显示/隐藏按钮
+          hideOnClick: true // 点击slide时显示/隐藏按钮
         }
       }
     }

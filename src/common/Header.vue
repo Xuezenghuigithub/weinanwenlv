@@ -1,6 +1,8 @@
 <template>
   <div class="header">
+    <router-link to="/">
     <div class="header-left">渭南文化旅游综合服务平台</div>
+    </router-link>
     <div class="header-right">
       <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"
                text-color="#000">
@@ -12,7 +14,7 @@
           <router-link to="/pictures" tag="span">
             <el-menu-item index="1-2">美图赏析</el-menu-item>
           </router-link>
-          <router-link to="/evaluation" tag="span">
+          <router-link to="/comment" tag="span">
             <el-menu-item index="1-3">评价讨论</el-menu-item>
           </router-link>
         </el-submenu>

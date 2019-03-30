@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: "HomeFooter"
+  name: 'HomeFooter'
 }
 </script>
 

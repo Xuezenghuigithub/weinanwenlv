@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import HomeHeader from './components/Header'
+import HomeHeader from '../../common/Header'
 import HomeBanner from './components/Banner'
 import HomeRecommend from './components/Recommend'
 import HomeRouter from './components/Router'
 import HomeFeature from './components/Feature'
-import HomeFooter from './components/Footer'
+import HomeFooter from '../../common/Footer'
 export default {
   name: 'Home',
   components: {
