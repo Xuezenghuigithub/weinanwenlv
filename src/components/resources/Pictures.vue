@@ -84,7 +84,7 @@ export default {
     overflow hidden
     .banner-img
       width 100%
-      height: 450px
+      height: 400px
     .intro-breadcrumb
       font-size 16px
       margin 30px 0 0 60px

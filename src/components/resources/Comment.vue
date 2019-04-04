@@ -1,7 +1,7 @@
 <template>
   <div class="comment">
     <home-header></home-header>
-    <img class="banner-img" src="http://file.geeker.com.cn/uploadfile/test/1542112192419/06-%E6%97%85%E6%B8%B8%E5%B8%AE%E5%8A%A9_02.jpg">
+    <img class="banner-img" src="http://file.geeker.com.cn/uploadfile/test/1541670630338/05-%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5_02.jpg">
     <!--导航start-->
     <div class="intro-breadcrumb">
       您当前的位置：
@@ -109,7 +109,7 @@ export default {
     overflow hidden
     .banner-img
       width 100%
-      height: 450px
+      height: 400px
     .intro-breadcrumb
       font-size 16px
       margin 30px 0 0 60px

@@ -39,7 +39,12 @@
             <el-menu-item index="2-3">购在渭南</el-menu-item>
           </router-link>
         </el-submenu>
-        <el-menu-item index="3">用户登录</el-menu-item>
+        <el-submenu index="3">
+          <template slot="title">登录注册</template>
+          <router-link to="/login" tag="span">
+            <el-menu-item index="3-1">登录注册</el-menu-item>
+          </router-link>
+        </el-submenu>
       </el-menu>
       <div class="line"></div>
     </div>

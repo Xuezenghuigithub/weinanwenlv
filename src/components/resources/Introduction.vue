@@ -56,7 +56,7 @@
     class="intro-pagi"
     background
     layout="prev, pager, next"
-    :total="10">
+    :total="100">
   </el-pagination>
 <home-footer></home-footer>
 </div>
@@ -81,7 +81,7 @@ export default {
   overflow hidden
   .banner-img
     width 100%
-    height: 450px
+    height: 400px
   .intro-breadcrumb
     font-size 16px
     margin 30px 0 0 60px
@@ -121,5 +121,5 @@ export default {
         top 20px
         left 50px
   .intro-pagi
-    margin 10px 0 10px 600px
+    margin 10px 0 10px
 </style>

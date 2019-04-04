@@ -1,26 +1,34 @@
 <template>
 <div class="router">
   <ul>
+    <router-link to="/food">
     <li class="fl">
       <strong class="router-words1">食</strong>
       <span class="router-words2">/吃在渭南</span>
       <img class="router-img" src="http://www.xian-tourism.com/image/index-pic-3.jpg">
     </li>
+    </router-link>
+    <router-link to="/hotel">
     <li class="fl">
       <strong class="router-words1">宿</strong>
       <span class="router-words2">/住在渭南</span>
       <img class="router-img" src="http://www.xian-tourism.com/image/index-pic-4.jpg">
     </li>
+    </router-link>
+    <router-link to="/recreation">
     <li class="fl">
       <strong class="router-words1">娱</strong>
-      <span class="router-words2">/游在渭南</span>
+      <span class="router-words2">/乐在渭南</span>
       <img class="router-img" src="http://www.xian-tourism.com/image/index-pic-5.jpg">
     </li>
+    </router-link>
+    <router-link to="/shop">
     <li class="fl">
       <strong class="router-words1">购</strong>
       <span class="router-words2">/购在渭南</span>
       <img class="router-img" src="http://www.xian-tourism.com/image/index-pic-6.jpg">
     </li>
+    </router-link>
   </ul>
 </div>
 </template>

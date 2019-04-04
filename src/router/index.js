@@ -1,13 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from '../store/index'
 import Home from '@/components/home/Home'
 import Introduction from '@/components/resources/Introduction'
 import Pictures from '@/components/resources/Pictures'
 import Comment from '@/components/resources/Comment'
+import Food from '@/components/service/Food'
+import Hotel from '@/components/service/Hotel'
+import Traffic from '@/components/service/Traffic'
+import Scenic from '@/components/service/Scenic'
+import Recreation from '@/components/service/Recreation'
+import Shop from '@/components/service/Shop'
+import Login from '@/components/login/Login'
+import Register from '@/components/login/Register'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -28,6 +37,65 @@ export default new Router({
       path: '/comment',
       name: 'comment',
       component: Comment
+    },
+    {
+      path: '/food',
+      name: 'food',
+      component: Food
+    },
+    {
+      path: '/hotel',
+      name: 'hotel',
+      component: Hotel
+    },
+    {
+      path: '/traffic',
+      name: 'traffic',
+      component: Traffic
+    },
+    {
+      path: '/scenic',
+      name: 'scenic',
+      component: Scenic
+    },
+    {
+      path: '/recreation',
+      name: 'recreation',
+      component: Recreation
+    },
+    {
+      path: '/shop',
+      name: 'shop',
+      component: Shop
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
     }
   ]
 })
+// 注册全局钩子用来拦截导航
+router.beforeEach((to, from, next) => {
+  // 获取store里面的token
+  let token = store.state.token
+  // 判断要去的路由有没有requiresAuth
+  if (to.meta.requiresAuth) {
+    if (token) {
+      next()
+    } else {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath } // 将刚刚要去的路由path作为参数，方便登录成功后直接跳转到该路由
+      })
+    }
+  } else {
+    next()
+  }
+})
+export default router
