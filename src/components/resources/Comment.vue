@@ -43,7 +43,62 @@
         class="add-comment"
         type="primary"
         icon="el-icon-edit"
-        @click="handleClick">我也要评论</el-button>
+        @click="handleAddClick">我也要评论</el-button>
+      <!--添加评论表单-->
+      <transition enter-active-class="bounceIn" leave-active-class="bounceOut">
+      <div class="add-form" v-show="step">
+        <!--选择日期-->
+        <el-date-picker
+          v-model="time"
+          type="date"
+          placeholder="选择日期"
+          class="select-time"
+          value-format="yyyy-MM-dd"
+          format="yyyy-MM-dd"
+        >
+        </el-date-picker>
+        <!--选择评论地点-->
+        <template>
+          <el-select
+            v-model="value"
+            class="select-place"
+            filterable
+            placeholder="请选择景区"
+          >
+            <el-option
+              v-for="item in options"
+              :key="item.id"
+              :value="item.value"
+              :id="item.id">
+            </el-option>
+          </el-select>
+        </template>
+        <!--输入评论内容-->
+        <el-input
+          type="textarea"
+          placeholder="请输入评论内容"
+          v-model="text"
+          maxlength="100"
+          :autosize="{ minRows: 4, maxRows: 4}"
+          class="comment-text"
+        >
+        </el-input>
+        <!--输入为空提示-->
+        <el-alert
+          title="任意选项不能为空"
+          type="error"
+          center
+          show-icon
+          class="error-massage"
+          v-show="this.errorStep"
+        >
+        </el-alert>
+        <el-row class="form-button">
+          <el-button type="danger" @click="handleCloseClick" class="form-close">取消</el-button>
+          <el-button type="success" @click="handleSubmitClick" class="form-submit">发表</el-button>
+        </el-row>
+      </div>
+      </transition>
     </div>
     <!--分页器start-->
     <el-pagination
@@ -66,6 +121,42 @@ export default {
   },
   data () {
     return {
+      step: false,
+      time: '',
+      options: [{
+        id: '选项1',
+        value: '华山'
+      }, {
+        id: '选项2',
+        value: '少华山'
+      }, {
+        id: '选项3',
+        value: '同洲湖'
+      }, {
+        id: '选项4',
+        value: '处女泉'
+      }, {
+        id: '选项5',
+        value: '渭华起义纪念馆'
+      }, {
+        id: '选项6',
+        value: '澄城县尧头窑遗址'
+      }, {
+        id: '选项7',
+        value: '司马迁祠墓'
+      }, {
+        id: '选项8',
+        value: '党家村古建筑群'
+      }, {
+        id: '选项9',
+        value: '洽川风景区'
+      }, {
+        id: '选项10',
+        value: '卤阳湖 '
+      }],
+      value: '',
+      text: '',
+      errorStep: false,
       tableData: [{
         date: '2018-12-12',
         username: '薛增辉',
@@ -95,8 +186,28 @@ export default {
     }
   },
   methods: {
-    handleClick () {
-
+    handleAddClick () {
+      this.step = true
+      this.time = ''
+      this.value = ''
+      this.text = ''
+    },
+    handleCloseClick () {
+      this.step = false
+    },
+    handleSubmitClick () {
+      const comment = {
+        date: this.time,
+        username: '用户1',
+        place: this.value,
+        content: this.text
+      }
+        this.tableData.unshift(comment)
+        this.$message({
+          message: '发表成功',
+          type: 'success'
+        })
+        this.step = false
     }
   }
 }
@@ -128,4 +239,43 @@ export default {
       position absolute
       right 40px
       bottom -10px
+    .add-form
+      z-index 999
+      overflow hidden
+      position fixed
+      top: 50%
+      left: 50%
+      width: 800px
+      background-color: #f5f5f5
+      margin -100px -400px 0
+      border: 1px solid #909399
+      border-radius 10px
+      height: 200px
+      box-shadow 1px 3px 10px rgba(0,0,0,.5)
+</style>
+<style lang="stylus">
+  .select-time
+    float left
+    margin-top: 20px
+    margin-left 20px
+  .select-place
+    float left
+    width: 260px
+    margin-top: 20px
+    margin-left 20px
+  .comment-text
+    width: 500px
+    display block
+    margin-left 20px
+    margin-top: 70px
+  .form-close
+    position absolute
+    bottom -20px
+    right 100px
+  .form-submit
+    position absolute
+    bottom -20px
+    right 10px
+  .error-massage
+    position absolute
 </style>

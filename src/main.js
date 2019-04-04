@@ -9,6 +9,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'swiper/dist/css/swiper.css'
 import './assets/styles/iconfont.css'
 import 'babel-polyfill'
+import 'animate.css'
 
 Vue.use(ElementUI)
 Vue.use(VueAwesomeSwiper)
