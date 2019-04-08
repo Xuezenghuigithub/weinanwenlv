@@ -7,18 +7,22 @@
       </div>
       <span class="feature-title">丝绸之路旅游</span>
     </li>
+    <router-link to="/Historical">
     <li class="feature-list">
       <div class="feature-img">
         <img src="http://www.xian-tourism.com/image/index-sec5-2.jpg">
       </div>
       <span class="feature-title">历史文化旅游</span>
     </li>
+    </router-link>
+    <router-link to="/Red">
     <li class="feature-list">
       <div class="feature-img">
         <img src="http://www.xian-tourism.com/image/index-sec5-3.jpg">
       </div>
       <span class="feature-title">经典红色旅游</span>
     </li>
+    </router-link>
     <li class="feature-list">
       <div class="feature-img">
         <img src="http://www.xian-tourism.com/image/index-sec5-4.jpg">
@@ -36,8 +40,12 @@
 </template>
 
 <script>
+import Historical from '../../details/historical/Historical'
 export default {
-  name: 'HomeFeature'
+  name: 'HomeFeature',
+  components: {
+    Historical
+  }
 }
 </script>
 

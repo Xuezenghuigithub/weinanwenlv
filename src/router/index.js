@@ -13,6 +13,9 @@ import Recreation from '@/components/service/Recreation'
 import Shop from '@/components/service/Shop'
 import Login from '@/components/login/Login'
 import Register from '@/components/login/Register'
+import Historical from '@/components/details/historical/Historical'
+import Red from '@/components/details/red/Red'
+import Huashan from '@/components/details/Huashan'
 
 Vue.use(Router)
 
@@ -77,8 +80,26 @@ const router = new Router({
       path: '/register',
       name: 'register',
       component: Register
+    },
+    {
+      path: '/historical',
+      name: 'historical',
+      component: Historical
+    },
+    {
+      path: '/red',
+      name: 'red',
+      component: Red
+    },
+    {
+      path: '/huashan',
+      name: 'huashan',
+      component: Huashan
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
 // 注册全局钩子用来拦截导航
 router.beforeEach((to, from, next) => {

@@ -64,7 +64,7 @@ export default {
         {
           id: 1,
           name: '华山',
-          imgUrl: 'https://imgsrc.baidu.com/baike/pic/item/38dbb6fd5266d0169e4491ed9b2bd40734fa3591.jpg',
+          imgUrl: 'https://youimg1.c-ctrip.com/target/100s0u000000j3g2z1F7C_C_500_280_Q60.jpg',
           lvl: 'AAAAA',
           price: 160,
           time: '全天',

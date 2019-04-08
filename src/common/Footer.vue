@@ -1,6 +1,8 @@
 <template>
 <div class="footer">
+  <router-link to="/" tag="span">
   <span class="footer-title">大美渭南欢迎您！</span>
+  </router-link>
   <span class="footer-contact">旅游咨询电话：18292412724 地址：渭南师范学院 邮编：714000</span>
 </div>
 </template>

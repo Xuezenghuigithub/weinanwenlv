@@ -78,7 +78,7 @@
           type="textarea"
           placeholder="请输入评论内容"
           v-model="text"
-          maxlength="100"
+          maxlength="200"
           :autosize="{ minRows: 4, maxRows: 4}"
           class="comment-text"
         >

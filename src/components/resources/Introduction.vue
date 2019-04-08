@@ -1,7 +1,7 @@
 <template>
 <div class="intro">
 <home-header></home-header>
-  <img class="banner-img" src="https://cdn.pixabay.com/photo/2017/07/30/02/37/china-2553294_960_720.jpg">
+  <img class="banner-img" src="http://112.74.133.250:8080/zhly/uploadfile/20181015/f0ca057a65ea6bd901667706a0f301dc.jpg">
   <!--导航start-->
   <div class="intro-breadcrumb">
     您当前的位置：
@@ -19,9 +19,11 @@
         <p class="list-content">华山（Mount Hua）古称“西岳”，雅称“太华山”，为中国著名的五岳之一，中华文明的发祥地，“中华”和“华夏”之“华”，就源于华山。
           位于陕西省渭南市华阴市，在省会西安以东120千米处。南接秦岭，北瞰黄渭，自古以来就有“奇险天下第一山”的说法。
           华山是第一批国家重点风景名胜区，国家AAAAA级旅游景区，全国重点文物保护单位，国家地质公园。</p>
+        <router-link to="/huashan">
         <el-row>
           <el-button plain type="info" class="intro-btn">查看详情</el-button>
         </el-row>
+        </router-link>
       </li>
       <li class="intro-list">
         <img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=2f13ded96e81800a7ae8815cd05c589f/4bed2e738bd4b31c794ab3ed85d6277f9e2ff876.jpg">
@@ -65,11 +67,13 @@
 <script>
 import HomeHeader from '../../common/Header'
 import HomeFooter from '../../common/Footer'
+import Huashan from '../details/Huashan'
 export default {
   name: 'Introduction',
   components: {
     HomeHeader,
-    HomeFooter
+    HomeFooter,
+    Huashan
   }
 }
 </script>
