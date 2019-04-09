@@ -16,6 +16,7 @@ import Register from '@/components/login/Register'
 import Historical from '@/components/details/historical/Historical'
 import Red from '@/components/details/red/Red'
 import Huashan from '@/components/details/Huashan'
+import Simaqian from '@/components/details/historical/components/Simaqian'
 
 Vue.use(Router)
 
@@ -95,6 +96,11 @@ const router = new Router({
       path: '/huashan',
       name: 'huashan',
       component: Huashan
+    },
+    {
+      path: '/simaqian',
+      name: 'simaqian',
+      component: Simaqian
     }
   ],
   scrollBehavior (to, from, savedPosition) {

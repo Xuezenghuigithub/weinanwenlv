@@ -36,9 +36,11 @@
             1982年2月，国务院公布为全国重点文物保护位。司马迁祠墓建筑自坡下至顶端，依崖就势，层递而上。
             登其巅，可东望滔滔黄河，西眺巍巍梁山，南瞰古魏长城，北观芝水长流，可谓山环水抱，气象万千。
             壮观的自然形式和秀丽的风光，映衬出司马迁的高尚人格和伟大的业绩。</p>
-          <el-row>
-            <el-button plain type="info" class="intro-btn">查看详情</el-button>
-          </el-row>
+          <router-link to="/simaqian">
+            <el-row>
+              <el-button plain type="info" class="intro-btn">查看详情</el-button>
+            </el-row>
+          </router-link>
         </li>
         <li class="intro-list">
           <h2 class="list-title">党家村古建筑群（4A）</h2>
@@ -67,11 +69,13 @@
 <script>
   import HomeHeader from '../../../common/Header'
   import HomeFooter from '../../../common/Footer'
+  import Simaqian from '../historical/components/Simaqian'
   export default {
     name: 'Historical',
     components: {
       HomeHeader,
-      HomeFooter
+      HomeFooter,
+      Simaqian
     }
   }
 </script>

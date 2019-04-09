@@ -1,7 +1,7 @@
 <template>
   <div class="intro">
     <home-header></home-header>
-    <img class="banner-img" src="http://112.74.133.250:8080/zhly/uploadfile/20181015/f0ca057a65ea6bd901667706a0f301dc.jpg">
+    <img class="banner-img" src="http://s1.sinaimg.cn/mw690/001zwptXzy7m4DR8CZOc0&690">
     <div class="intro-breadcrumb">
       您当前的位置：
       <i class="el-icon-location-outline intri-icon"></i>
@@ -9,13 +9,13 @@
         <el-breadcrumb-item :to="{ path: '/' }">网站首页</el-breadcrumb-item>
         <el-breadcrumb-item>旅游资讯</el-breadcrumb-item>
         <el-breadcrumb-item :to="{ path: '/introduction' }">景点介绍</el-breadcrumb-item>
-        <el-breadcrumb-item>华山</el-breadcrumb-item>
+        <el-breadcrumb-item>司马迁祠墓</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <!--详情-->
     <div class="content">
       <div class="title-box">
-        <h1 class="title">华山</h1>
+        <h1 class="title">司马迁祠墓</h1>
       </div>
       <div class="detail">
         <!--轮播图-->
@@ -32,33 +32,33 @@
           <ul class="info-ul-t">
             <li class="info-li-t info-li-t-lvl">
               <p class="li-title">景区星级</p>
-              <p class="li-content">AAAAA</p>
+              <p class="li-content">AAAA</p>
             </li>
             <li class="info-li-t info-li-t-pr">
               <p class="li-title">门票价格</p>
-              <p class="li-price">160</p>
+              <p class="li-price">80</p>
             </li>
             <li class="info-li-t info-li-t-tel">
               <p class="li-title">景区电话</p>
-              <p class="li-content">0913-4362692</p>
+              <p class="li-content">0913-5414335</p>
             </li>
           </ul>
           <ul class="info-ul-v">
             <li class="info-li-v">
               <label>营业时间：</label>
-              全天
+              3－11月 8:00－18:00；12月份至2月份 8:00－17:30
             </li>
             <li class="info-li-v">
               <label>景区官网：</label>
-              <a class="info-add" href="http://huashan16.com" target="_blank">http://huashan16.com</a>
-              <a class="info-button" href="https://piao.ctrip.com/ticket/dest/t136698.html" target="_blank">
+              <a class="info-add" target="_blank">无</a>
+              <a class="info-button" href="https://piao.ctrip.com/dest/t52659.html" target="_blank">
                 <el-button round size="mini">一键购票</el-button>
               </a>
             </li>
             <li class="info-li-v">
               <label>景区地址：</label>
-              渭南市华阴市集灵路中段
-              <a class="info-button" href="https://ditu.amap.com/place/B0391003ON" target="_blank">
+              渭南市韩城市芝川镇芝马路
+              <a class="info-button" href="https://www.amap.com/place/B0391003M9" target="_blank">
                 <el-button round size="mini">一键导航</el-button>
               </a>
             </li>
@@ -69,11 +69,16 @@
         <div class="synopsis-title-box">
           <h3 class="synopsis-title">景区简介</h3>
         </div>
-        <p class="synopsis-text">华山（Mount Hua）古称“西岳”，雅称“太华山”，为中国著名的五岳之一，中华文明的发祥地，“中华”和“华夏”之“华”，就源于华山。位于陕西省渭南市华阴市，在省会西安以东120千米处。南接秦岭，北瞰黄渭，自古以来就有“奇险天下第一山”的说法。华山是第一批国家重点风景名胜区，国家AAAAA级旅游景区，全国重点文物保护单位，国家地质公园。
-          华山是中华民族的圣山。中华之“华”，源于华山，由此，华山有了“华夏之根”之称。这一成果首先被孙中山所引用，创立“中华民国”。据清代国学大师章太炎和历代专家学者考证：华夏民族最初形成并居住于“华山之周”，名其国土曰华，其后人迹所至，遍及九州，华之名始广。
-          华山是道教主流全真派圣地，为“第四洞天”，也是中国民间广泛崇奉的神祇，即西岳华山君神。共有72个半悬空洞，道观20余座，其中玉泉院、都龙庙、东道院、镇岳宫被列为全国重点道教宫观，有陈抟、郝大通、贺元希等著名的道教高人。
-          1982年，华山被国务院颁布为首批国家级风景名胜区；1991年，华山被国家旅游局评为四十佳旅游胜地之一；1999年，华山被中央文明委、建设部、国家旅游局命名为全国文明风景旅游区示范点；2004年，华山被评为中华十大名山； 2011年，华山被国家旅游局评为国家AAAAA级旅游景区；2017年6月29日，华山荣膺“2017中国最受欢迎旅游景区”殊荣。
-          华山是神州九大观日处之一，观日处位于华山东峰（亦称朝阳峰），朝阳台为最佳地点。“中国黄河50景”之一。</p>
+        <p class="synopsis-text">在陕西省韩城市芝川镇东南约300米处。司马迁(约前145～? )，字子长，夏阳(今陕西韩城)人，
+          西汉著名文学家、历史学家。他所著《史记》一书，开创中国通史体例，对后世史学和文学的发展都有深远的影响。
+          后人为纪念他的功绩，在原籍修建祠和墓。现存建筑最早是宋代修建的寝宫和山门。1982年中华人民共和国国务院公
+          布为全国重点文物保护单位。 祠依山傍水而建，坐落在用砖石筑成的高台上，高约 100米，占地面积约 13万平方米，
+          台阶为 99层，分为 4段。第 1、2 段立牌坊，上书“高山仰止”、“河山之阳”。第 4段为宋代建筑的山门，门额上书
+          “汉太史祠”。祠院正中为献殿、寝宫。寝宫内有司马迁塑像1 尊。寝宫左邻为斋厨。寝宫后为墓地。墓冢砖垣围护，
+          墓上有古柏数株。墓基周围嵌有砖刻八卦和名人题词多幅。墓前立“汉太史公墓”碑。 马迁墓与祠，在韩城市城南10公里
+          芝川镇南门外，位于黄河西岸的梁山东麓。现为全国重点文物保护单位。司马迁祠墓位于城区以南10公里处的芝川黄河古
+          渡口高岗上。一部《史记》成就了司马迁。史圣的祠墓也像一座丰碑，历经千百年沧桑而愈显雄伟。司马迁祠墓依山而建。
+          过芝秀古桥，进入汉太史司马迁祠墓群，过古牌坊，便是石条铺就的司马古道。</p>
       </div>
     </div>
     <!--评论列表start-->
@@ -127,7 +132,7 @@
               v-model="value"
               class="select-place"
               filterable
-              placeholder="华山"
+              placeholder="司马迁祠墓"
               disabled
             >
               <el-option
@@ -177,10 +182,10 @@
 </template>
 
 <script>
-  import HomeHeader from '../../common/Header'
-  import HomeFooter from '../../common/Footer'
+  import HomeHeader from '../../../../common/Header'
+  import HomeFooter from '../../../../common/Footer'
   export default {
-    name: 'Huashan',
+    name: 'Simaqian',
     components: {
       HomeHeader,
       HomeFooter
@@ -190,23 +195,23 @@
         imgList: [
           {
             id: 1,
-            imgUrl: 'https://youimg1.c-ctrip.com/target/fd/tg/g4/M0B/3C/45/CggYHlXKtaOAM6jRAAs45HPKtlg492_C_500_280_Q60.jpg'
+            imgUrl: 'http://img8.ppsj.com.cn/416/4167/w231863008.jpg'
           },
           {
             id: 2,
-            imgUrl: 'https://youimg1.c-ctrip.com/target/fd/tg/g4/M05/3C/51/CggYHFXKtZCAPTybAAgPqgkZfz8510_C_500_280_Q60.jpg'
+            imgUrl: 'http://s16.sinaimg.cn/large/001zwptXzy7m4DVl94b2f&690'
           },
           {
             id: 3,
-            imgUrl: 'https://youimg1.c-ctrip.com/target/fd/tg/g3/M08/17/5E/CggYG1aPK1mAHgv_ADR3caeUpZI130_C_500_280_Q60.jpg'
+            imgUrl: 'http://s9.sinaimg.cn/large/001zwptXzy7m4DRTf4cf8&690'
           },
           {
             id: 4,
-            imgUrl: 'https://youimg1.c-ctrip.com/target/fd/tg/g4/M09/D8/D5/CggYHVbmIwSAZfBNACasJgURF0s788_C_500_280_Q60.jpg'
+            imgUrl: 'http://s3.sinaimg.cn/large/001zwptXzy7m4DUJVMCe2&690'
           },
           {
             id: 5,
-            imgUrl: 'https://youimg1.c-ctrip.com/target/fd/tg/g4/M0A/D8/E5/CggYHVbmI2eAM3COACx_RPv5r-M631_C_500_280_Q60.jpg'
+            imgUrl: 'http://s12.sinaimg.cn/mw690/001zwptXzy7m4DQoFmPcb&690'
           }
         ],
         step: false,
@@ -248,28 +253,28 @@
         tableData: [{
           date: '2018-12-12',
           username: '薛增辉',
-          place: '华山',
-          content: '华山以险著称，也是我一直期待去的地方。自古华山一条路，现在我们不必走这条路，我们是坐着索道上山的（是西峰上西峰下），尽管如此我们去西峰山顶，南峰山顶还是爬了3个多小时的山路，蛮吃力的。要是没有索道，上山真是难以想象……'
+          place: '司马迁祠墓',
+          content: '太史公司马迁，那是我从小时候一提起就肃然起敬的历史人物，扎根在心底的浩然正气。'
         }, {
           date: '2019-02-03',
           username: '杨磊',
-          place: '华山',
-          content: '高滴很木！'
+          place: '司马迁祠墓',
+          content: '今日有幸瞻仰，一路上满心呼唤，善哉善哉，快哉快哉。'
         }, {
           date: '2019-03-10',
           username: 'Mike',
-          place: '华山',
-          content: '风景优美，不愧是“奇险天下第一山”'
+          place: '司马迁祠墓',
+          content: 'Nice！！！'
         }, {
           date: '2019-03-20',
           username: '王鹏勋',
-          place: '华山',
-          content: '花了整整五个小时才爬到东峰顶，还是很有成就感的！墙裂推荐！！'
+          place: '司马迁祠墓',
+          content: '司马迁在忍受旷世屈辱后，不怨天尤人，不阿谀奉承，挥动如椽巨笔发奋著述，究天人之际，通古今之变，成一家之言，那种风骨节气和胆识精神，又是何人能比？'
         }, {
           date: '2019-03-21',
           username: '静静',
-          place: '华山',
-          content: '和男朋友一起去看日出~~'
+          place: '司马迁祠墓',
+          content: '站在祠庙凭高远眺，看到黄河沉沉一线，远山朦胧苍翠，山环水抱，长桥飞架，风光壮丽，心胸为之一振，此行不虚！'
         }]
       }
     },
